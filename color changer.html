@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Color Changer</title>
+</head>
+<style>
+    body{
+    align-items: center;
+    display: flex;
+    justify-content:center;
+    height: 100px;
+}
+button{
+    font-size: flex;
+    font-display: center;
+    padding: 15px 30px;
+
+}
+
+</style>
+<body>
+    <h1>Color Changer </h1>
+
+    
+
+    <button onclick="changeColor()">Change Color</button>
+
+    <script>
+        function changeColor() {
+
+            let colors = ["red", "blue", "voilet", "purple", "pink"];
+
+            let random = Math.floor(Math.random() * colors.length);
+
+            document.body.style.backgroundColor = colors[random];
+        }
+    </script>
+
+</body>
+</html>
